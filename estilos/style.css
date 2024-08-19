@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background: url(../pacote-d013/pacote-d013/imagens/fundo.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section#telefone {
+    height: 627px;
+    width: 311px;
+    background: url(../pacote-d013/pacote-d013/imagens/frame-iphone.png);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+iframe#tela {
+    height: 472px;
+    width: 268px;
+}
+
+section#redes-sociais {
+    position: absolute;
+    top: 25%;
+    right: 3%;
+    
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 20%;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.829);
+    transition: border 1s;
+}
+
+@media (max-width: 600px) {
+    section#redes-sociais {
+        flex-direction: row;
+
+        width: 48%;
+        height: 0;
+
+        top: 88%;
+        right: 26%;
+        background-color: red;
+    }
+}
