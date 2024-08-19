@@ -67,16 +67,3 @@ section#redes-sociais img:hover {
     border: 2px solid rgba(255, 255, 255, 0.829);
     transition: border 1s;
 }
-
-@media (max-width: 600px) {
-    section#redes-sociais {
-        flex-direction: row;
-
-        width: 48%;
-        height: 0;
-
-        top: 88%;
-        right: 26%;
-        background-color: red;
-    }
-}
