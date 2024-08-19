@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+::-webkit-scrollbar {
+    display: none;
+    /* Para navegadores WebKit, como Chrome e Safari */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,13 +15,13 @@ html,body {
     height: 100vh;
     width: 100vw;
     background-color: black;
+    
 }
 
 body {
     background: url(../pacote-d013/pacote-d013/imagens/fundo.jpg) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
-    box-sizing: border-box;
 }
 
 main {
